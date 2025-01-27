@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddMemory.AddMemoryFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        tools:layout_editor_absoluteX="-201dp"
+        tools:layout_editor_absoluteY="-25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <Chronometer
+                android:id="@+id/Chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewShowMessageForFirstOpenApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStartEnd"
+                android:layout_marginEnd="@dimen/marginStartEnd"
+                style="@style/cardView"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/textView"
+                    android:layout_margin="@dimen/marginStartEnd"
+                    android:text="@string/recordMemoryText"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/TextViewChornometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="8dp"
+                android:text="00:00:00"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/viewForWavSound"
+                layout="@layout/view_for_wav_sound" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/AppCompatImageViewPlay"
+                    android:layout_width="@dimen/iconePalyer"
+                    android:layout_height="@dimen/iconePalyer"
+                    android:src="@drawable/play"
+                    android:tint="@color/gray" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/iconePalyerCircleBtn"
+                    android:layout_height="@dimen/iconePalyerCircleBtn"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    app:cardCornerRadius="100dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/AppCompatImageViewRecord"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/iconePalyer"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/microphone"
+                            android:tint="@color/red" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/AppCompatImageViewPause"
+                            android:layout_width="@dimen/iconePalyerPause"
+                            android:layout_height="@dimen/iconePalyerPause"
+                            android:layout_gravity="center"
+                            android:src="@drawable/pause"
+                            android:tint="@color/gray"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/AppCompatImageViewStop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/stop"
+                    android:tint="@color/gray" />
+
+            </LinearLayout>
+
+            <!--choose title-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStartEnd"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="@dimen/marginStartEnd"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chooseMemoryTitle" />
+
+                <androidx.cardview.widget.CardView
+                    style="@style/cardView_grayLight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:minHeight="@dimen/minHeightBTN">
+                    <Spinner
+                        android:id="@+id/SpinnerMemoryList"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/minTouch"
+                        android:layout_gravity="center"
+                        android:layout_margin="7dp" />
+                </androidx.cardview.widget.CardView>
+
+                <!--add new title-->
+               <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0dp"
+                    android:contentDescription="@string/fab_content_description"
+                    app:srcCompat="@android:drawable/ic_input_add"
+
+                    />-->
+
+                <!--choose image-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CardViewAddImageToAlbumBtn"
+                    style="@style/cardView_grayLight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/marginStartEnd"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/marginStartEnd"
+                    android:minHeight="@dimen/minHeightBTN"
+                    app:cardBackgroundColor="@color/teal_200">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="top"
+                        android:orientation="horizontal"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="7dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/imageView"
+                            android:layout_width="@dimen/icon_size_25"
+                            android:layout_height="@dimen/icon_size_25"
+                            app:srcCompat="@drawable/ic_camera_black_24dp"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            style="@style/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/makePhotoAlbum"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <include
+                android:id="@+id/makeImageAlbum"
+                layout="@layout/custom_recyclerview_for_make_image_album" />
+
+            <Button
+                android:id="@+id/ButtonAddNewMemoryWithVoice"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginStart="@dimen/marginStartEnd"
+                android:layout_marginEnd="@dimen/marginStartEnd"
+                android:minWidth="250dp"
+                android:text="@string/addMemory" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

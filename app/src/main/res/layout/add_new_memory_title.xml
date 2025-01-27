@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardViewAddNewMemo"
+            style="@style/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:minHeight="250dp"
+            tools:ignore="MissingConstraints"
+            android:visibility="gone"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textView_title_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/createNewMemoir" />
+
+                <androidx.cardview.widget.CardView
+                    style="@style/cardView_grayLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+                    <EditText
+                        android:id="@+id/editTextAddTitleMemo"
+                        style="@style/editText_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:hint="@string/addTitle" />
+                </androidx.cardview.widget.CardView>
+                <CheckBox
+                    android:id="@+id/checkBoxIsHaveImageOrDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addCoverOrDescription"
+                    android:checked="false"
+                    style="@style/textView"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutAddImageOrDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <androidx.cardview.widget.CardView
+                        style="@style/cardView_grayLight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp">
+                        <EditText
+                            android:id="@+id/editTextAddDescription"
+                            style="@style/editText_center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxHeight="150dp"
+                            android:layout_margin="5dp"
+                            android:hint="@string/addDescription" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/buttonSelectImageBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/cardView_grayLight"
+                            android:minWidth="@dimen/minWidthBTN"
+                            android:minHeight="@dimen/minHeightBTN"
+                            app:cardBackgroundColor="@color/primaryVariantColor"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                >
+                                <ImageView
+                                    android:layout_width="@dimen/icon_size_25"
+                                    android:layout_height="@dimen/icon_size_25"
+                                    android:src="@drawable/ic_camera_black_24dp"
+                                    style="@style/imageView"
+                                    app:tint="@color/white" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/textView_title_center"
+                                    android:text="@string/selectImage"
+                                    android:textColor="@color/white"
+                                    />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/AppCompatImageViewCaverMemoir"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:maxHeight="100dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="10dp"
+                            style="@style/imageView"
+                            android:layout_gravity="top"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/buttonAddNewMemoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add"
+                    android:layout_marginTop="25dp"
+                    style="@style/button"
+                    />
+                <!--
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/CardViewAddNewMemoBtn"
+                                style="@style/cardView_btn"
+                                android:layout_width="150dp"
+                                android:layout_height="@dimen/minTouch"
+                               >
+
+                                <TextView
+                                    style="@style/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                     />
+                            </androidx.cardview.widget.CardView>-->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

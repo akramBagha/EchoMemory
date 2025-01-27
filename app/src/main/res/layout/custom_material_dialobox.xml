@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="12dp"
+    >
+
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textView_title_center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text=""
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textView"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <Button
+            android:id="@+id/buttonOkBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/button"
+            android:text="@string/ok"
+            />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            />
+
+        <Button
+            android:id="@+id/buttonCancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/button"
+            android:text="@string/cancel"
+            android:visibility="gone"
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/CardViewCancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            style="@style/cardView"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/TextView_dialogCancleBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/textView_center"
+                android:text=""
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

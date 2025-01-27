@@ -1,0 +1,39 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="item_transform_image_length">60dp</dimen>
+    <dimen name="reflow_text_block_max_percent">1</dimen>
+    <dimen name="reflow_text_block_horizontal_gap">8dp</dimen>
+    <dimen name="reflow_text_title_size">22sp</dimen>
+    <dimen name="reflow_text_description_size">13sp</dimen>
+
+
+    <dimen name="icon_size_25">25dp</dimen>
+    <dimen name="iconePalyer">50dp</dimen>
+    <dimen name="iconePalyerPause">20dp</dimen>
+    <dimen name="iconePalyerCircleBtn">80dp</dimen>
+    <dimen name="fab_icone">38dp</dimen>
+    <dimen name="cardview_radius">20dp</dimen>
+
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_25">25sp</dimen>
+    <dimen name="text_30">30sp</dimen>
+    <dimen name="text_40">40sp</dimen>
+    <dimen name="lineHeight">7sp</dimen>
+
+    <dimen name="minTouch">48dp</dimen>
+    <dimen name="editText_height_size">50dp</dimen>
+    <dimen name="minWidthBTN">70dp</dimen>
+    <dimen name="minHeightBTN">48dp</dimen>
+    <dimen name="imageForMakeAlbum">55dp</dimen>
+    <dimen name="app_slider_bottom_button">10dp</dimen>
+    <dimen name="slider_height">250dp</dimen>
+    <dimen name="marginStartEnd">15dp</dimen>
+    <dimen name="view_for_wav_sound">100dp</dimen>
+
+
+</resources>

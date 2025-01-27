@@ -1,0 +1,14 @@
+<!-- res/drawable/rounded_button.xml -->
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/teal_200" /> <!-- background color -->
+    <corners android:radius="@dimen/cardview_radius" />
+    <padding
+        android:left="10dp"
+        android:top="10dp"
+        android:right="10dp"
+        android:bottom="10dp" />
+    <stroke
+        android:width="1dp"
+        android:color="@color/grayLight2" /> <!-- حاشیه -->
+</shape>

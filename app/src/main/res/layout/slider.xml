@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutSlider"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/slider_height"
+        android:padding="0dp"
+        tools:context="com.viralandroid.androidimageslidertutorial.AndroidImageSlider"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPagerSliderHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <!-- divider -->
+        <LinearLayout
+            android:id="@+id/LinearLayoutCircleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

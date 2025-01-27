@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="app_name">Echo Memory</string>
+    <string name="appName">Echo Memory</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+   <!-- <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>-->
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_transform">Memory List</string>
+    <string name="menu_reflow">Add Memory</string>
+    <string name="menu_slideshow">Play Memory</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+
+    <string name="recordingStarted">Recording started</string>
+    <string name="voiceSave">Your voice Saved</string>
+    <string name="createNewMemoir">Create new memoir</string>
+    <string name="addTitle">write title</string>
+    <string name="addDescription">write description</string>
+    <string name="add">Add</string>
+    <string name="addMemory">add memory</string>
+    <string name="addCoverOrDescription">Would you like to add a cover image or description of this memoir?</string>
+    <string name="selectImage">Select image</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">ok</string>
+    <string name="iChoose">I choose</string>
+    <string name="dearUser">Dear User</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="doYouChooseFromGallery">Do you choose from an image gallery?</string>
+    <string name="error">Error</string>
+    <string name="enterTitle">Enter title</string>
+    <string name="successAddNewMemoir">Success add new memoir title </string>
+    <string name="addPhotoToMemoir">Add photo to a memoir</string>
+    <string name="recordMemoryText">To record a memory, start by tapping the MemoryList tab and tapping + button to create a new title,
+        or if you have already created titles so pick one from the drop-down list.
+        Then, record your voice. You can even add a photo album to make your memory more complete.
+    </string>
+    <string name="chooseMemoryTitle">Choose a memory title</string>
+    <string name="makePhotoAlbum">Make a photo album to save your memories</string>
+    <string name="successSave">Information was successfully recorded.</string>
+    <string name="kotlinsharedpreference">kotlinsharedpreference</string>
+    <string name="saveVoiceAndSelectTitle">Please save the voice and select a memory title. If the dropdown is empty, tap the MemoryList tab and create a new title. </string>
+    <string name="A"></string>
+</resources>

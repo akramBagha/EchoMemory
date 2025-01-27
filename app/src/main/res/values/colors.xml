@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <color name="primaryColor">#f3cccf</color>-->
+    <color name="primaryColor">#d7a1a9</color>
+    <color name="primaryColorLight">#F8EAEC</color>
+    <color name="primaryVariantColor">#cd9481</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#cf9884</color>
+    <color name="teal_700">#b27c69</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#de4d63</color>
+    <color name="text">#403D3D</color>
+    <color name="gray">#878181</color>
+    <color name="grayLight">#D9D2D2</color>
+    <color name="grayLight2">#26878181</color>
+    <color name="backgroundApp">#F0EDED</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#5F054A</color>
+</resources>
