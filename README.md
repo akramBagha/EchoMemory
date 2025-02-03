@@ -11,4 +11,4 @@ This app is about recording audio along with a photo slider.
 
 
 # Download APK
-[link for download](https://raw.githubusercontent.com/akramBagha/EchoMemory/main/echoMemory.apk)
+[link for download](https://github.com/akramBagha/EchoMemory/releases/tag/record_voice_slider_image)
