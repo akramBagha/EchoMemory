@@ -8,7 +8,7 @@ This app is about recording audio along with a photo slider.
 - Playing the recorded audio along with selected photos in a slider format  
 - Compatible with Android 7 and above  
 - Responsive design
--Utilizing **LiveData** for dynamically updating the list when adding a new item.
+- Utilizing **LiveData** for dynamically updating the list when adding a new item.
 
 
 # Download APK
